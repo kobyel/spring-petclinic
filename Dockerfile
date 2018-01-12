@@ -22,7 +22,7 @@ RUN apk update && apk upgrade \
   && chmod +x /etc/profile.d/alias.sh \
   && chmod +x /docker-entrypoint.sh
 
-COPY target/spring-petclinic-1.5.1.jar /opt/petclinic/
+COPY target/spring-petclinic.jar /opt/petclinic/
 
 EXPOSE 8080
 
